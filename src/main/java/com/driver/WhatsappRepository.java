@@ -124,7 +124,7 @@ public class WhatsappRepository {
         throw new Exception("Group does not exist");
     }
 
-    public int removeUser(User user) {
+    public int removeUser(User user) throws Exception {
         Group groupuser=new Group();
         for(Group group:groupUserMap.keySet()){
             List<User> userList=groupUserMap.get(group);
